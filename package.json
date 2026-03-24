@@ -1,0 +1,33 @@
+{
+  "name": "awos_practica06_240235",
+  "version": "1.0.0",
+  "description": "<p align=\"justify\">\r El proyecto <b>AWOS_Practica06_240235</b> consiste en el desarrollo de una plataforma robusta para la <b>Gestión y Consumo de APIs de Terceros</b>. La aplicación integra servicios críticos de la industria actual: procesamiento de pagos seguros (Mercado Pago), generación de contenido mediante Inteligencia Artificial (Google Gemini AI) y gestión colaborativa de actividades (Padlet). Basado en una arquitectura orientada a servicios (SOA), el sistema garantiza escalabilidad y seguridad en el manejo de API Keys individuales mediante el patrón de diseño MVC.\r </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yazmin0608/AWOS_Practica06_240235.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/yazmin0608/AWOS_Practica06_240235/issues"
+  },
+  "homepage": "https://github.com/yazmin0608/AWOS_Practica06_240235#readme",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "axios": "^1.13.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mercadopago": "^2.12.0",
+    "pug": "^3.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "tailwindcss": "^4.2.2"
+  }
+}
