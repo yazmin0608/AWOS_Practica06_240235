@@ -25,7 +25,7 @@ El proyecto <b>AWOS_Practica06_240235</b> consiste en el desarrollo de una plata
 
 | No. | Tema |  Descripción | Potenciador | Estatus |
 | :--- | :--- | :--- | :--- | :--- |
-| 1. | **Configuración de Entorno** | Inicialización de NodeJS, Express y variables de entorno (.env). Configuración de Git y ramas. | 2 | ❌ |
+| 1. | **Configuración de Entorno** | Inicialización de NodeJS, Express y variables de entorno (.env). Configuración de Git y ramas. | 2 | ✅ Finalizada |
 | 2. | **Infraestructura de Routing y MVC** | Estructuración de carpetas y definición de rutas para cada servicio. | 5 | ❌ |
 | 3. | **Frontend Base (Tailwind & Layouts)** | Implementación de la Landing Page y componentes reutilizables. | 5 | ❌ |
 | 4. | **Módulo de IA Generativa** | Integración de Google Gemini API para la generación de contenido dinámico. | 8 | ❌ |
