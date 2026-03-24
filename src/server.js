@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import geminiRoutes from './routes/geminiRoutes.js';
 import mercadoPagoRoutes from './routes/mercadoPagoRoutes.js';
+import padletRoutes from './routes/padletRoutes.js';
 
 // Cargar variables de entorno
 dotenv.config();
@@ -15,6 +16,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('src/public'));
 app.use('/ia', geminiRoutes);
 app.use('/checkout', mercadoPagoRoutes);
+app.use('/muro', padletRoutes);
 
 // Configuración del Motor de Plantillas (Pug)
 app.set('view engine', 'pug');
