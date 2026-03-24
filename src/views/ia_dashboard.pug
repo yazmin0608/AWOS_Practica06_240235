@@ -1,0 +1,40 @@
+extends layout
+
+block contenido
+    div.max-w-4xl.mx-auto
+        div.bg-white.rounded-3xl.shadow-2xl.overflow-hidden.border.border-gray-100
+            div.bg-azul-deep.p-6.text-white.flex.items-center.justify-between
+                h2.text-2xl.font-bold 🤖 Panel de Inteligencia Artificial
+                span.bg-rojo-accent.px-3.py-1.rounded-full.text-xs.uppercase Gemini Pro Activo
+            
+            div.p-8
+                p.text-gray-600.mb-6 Realiza consultas complejas sobre finanzas, tecnología o planeación de proyectos.
+                
+                div#chat-box.bg-gray-50.rounded-2xl.p-6.mb-6.h-64.overflow-y-auto.border.border-inner
+                    p.text-gray-400.italic Esperando tu consulta...
+
+                form#ia-form.space-y-4
+                    textarea(name="prompt" class="w-full p-4 bg-gray-100 rounded-2xl border-none focus:ring-2 focus:ring-rojo-accent outline-none" placeholder="Escribe tu pregunta aquí..." rows="3")
+                    
+                    div.flex.justify-end
+                        input(class="w-48 bg-azul-deep text-white hover:bg-rojo-accent font-bold py-3 cursor-pointer rounded-4xl shadow-lg uppercase transition-all duration-300 transform hover:scale-105" type="submit" value="Consultar IA")
+
+    script.
+        document.getElementById('ia-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const prompt = e.target.prompt.value;
+            const chatBox = document.getElementById('chat-box');
+            
+            chatBox.innerHTML += `<p class="text-blue-600 font-bold">Tú: <span class="text-gray-800 font-normal">${prompt}</span></p>`;
+            
+            const res = await fetch('/ia/ask', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ prompt })
+            });
+            const data = await res.json();
+            
+            if(data.success) {
+                chatBox.innerHTML += `<p class="text-rojo-accent font-bold mt-2">Gemini: <span class="text-gray-800 font-normal">${data.answer}</span></p>`;
+            }
+        });
