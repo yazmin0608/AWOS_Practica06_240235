@@ -27,7 +27,7 @@ El proyecto <b>AWOS_Practica06_240235</b> consiste en el desarrollo de una plata
 | :--- | :--- | :--- | :--- | :--- |
 | 1. | **Configuración de Entorno** | Inicialización de NodeJS, Express y variables de entorno (.env). Configuración de Git y ramas. | 2 | ✅ Finalizada |
 | 2. | **Infraestructura de Routing y MVC** | Estructuración de carpetas y definición de rutas para cada servicio. | 5 | ✅ Finalizada |
-| 3. | **Frontend Base (Tailwind & Layouts)** | Implementación de la Landing Page y componentes reutilizables. | 5 | ❌ |
+| 3. | **Frontend Base (Tailwind & Layouts)** | Implementación de la Landing Page y componentes reutilizables. | 5 | ✅ Finalizada |
 | 4. | **Módulo de IA Generativa** | Integración de Google Gemini API para la generación de contenido dinámico. | 8 | ❌ |
 | 5. | **Módulo de Pagos (Fintech)** | Implementación de Checkout y gestión de transacciones con Mercado Pago. | 8 | ❌ |
 | 6. | **Módulo de Planeación (Colaborativo)** | Integración de Padlet API para la gestión de tableros. | 7 | ❌ |
