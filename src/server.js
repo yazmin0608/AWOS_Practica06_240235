@@ -14,13 +14,14 @@ app.use(express.static('src/public'));
 
 // Configuración del Motor de Plantillas (Pug)
 app.set('view engine', 'pug');
-app.set('views', './src/views');
+app.set('views', './src/views'); // Asegúrate de que la ruta sea correcta
 
-// Ruta de prueba inicial
+// RUTA ACTUALIZADA PARA LA FASE 03
 app.get('/', (req, res) => {
-    res.send('Infraestructura MVC Lista - AWOS Practica 06');
+    // Cambiamos res.send por res.render para mostrar index.pug
+    res.render('index');
 });
 
 app.listen(PORT, () => {
-    console.log(`Servidor corriendo en http://localhost:${PORT}`);
+    console.log(`Servidor corriendo en http://localhost:${PORT} 🚀`);
 });

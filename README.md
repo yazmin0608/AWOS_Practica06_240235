@@ -39,7 +39,7 @@ El proyecto <b>AWOS_Practica06_240235</b> consiste en el desarrollo de una plata
 * **Módulo Fintech (Mercado Pago):** Generación de preferencias de pago, checkout interactivo y consulta de estados de transacción.
 * **Módulo IA (Gemini):** Chatbot especializado y generación de reportes automáticos utilizando modelos de lenguaje avanzados.
 * **Módulo de Actividades (Padlet):** Visualización de tableros, creación de muros de trabajo y gestión de notas en tiempo real.
-
+    
 ---
 
 ## 🚀 Instalación

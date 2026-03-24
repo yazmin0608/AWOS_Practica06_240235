@@ -1,0 +1,45 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title AWOS_Practica06 | 240235
+        script(src="https://cdn.tailwindcss.com")
+        //- Inyectamos la configuración de Tailwind para que reconozca el 4xl en el navegador
+        script.
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'azul-deep': '#0F172A', // Un azul casi negro muy elegante
+                            'rojo-accent': '#EF4444', // Rojo vibrante para contrastes
+                        },
+                        borderRadius: { '4xl': '2rem' }
+                    }
+                }
+            }
+    //- Fondo gris muy suave para que resalten las tarjetas blancas
+    body.bg-gray-100.font-sans
+        //- Header Azul Profundo con texto blanco
+        header.bg-azul-deep.shadow-xl.p-5.sticky.top-0.z-50
+            nav.container.mx-auto.flex.justify-between.items-center
+                //- Logo con el Rojo Accent
+                h1.text-3xl.font-extrabold.text-white AWOS_
+                    span.text-rojo-accent Práctica06
+                //- Enlaces blancos con hover Rojo Accent
+                div(class="space-x-6 font-semibold text-gray-200")
+                    a(href="/" class="hover:text-rojo-accent transition-colors") Inicio
+                    a(href="/ia" class="hover:text-rojo-accent transition-colors") Gemini IA
+                    a(href="/pagos" class="hover:text-rojo-accent transition-colors") Mercado Pago
+                    a(href="/actividades" class="hover:text-rojo-accent transition-colors") Padlet
+        
+        //- Main con un poco más de padding
+        main.container.mx-auto.mt-16.px-6.pb-10
+            block contenido
+
+        //- Footer Azul Profundo con texto gris claro
+        footer.mt-20.py-10.bg-azul-deep.text-center.text-gray-400.border-t.border-gray-700
+            p.text-lg &copy; 2026 - 
+                span.text-white.font-bold Yazmin Ariana Esquivel Marquez (240235)
+                |  | UTXJ
+            p.text-sm.mt-2 Plataforma de Integración de APIs Online - SOA/MVC

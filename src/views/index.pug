@@ -1,0 +1,37 @@
+extends layout
+
+block contenido
+    //- Hero Section centrada con tipografía más grande
+    div.text-center.max-w-4xl.mx-auto
+        span.inline-block.bg-rojo-accent.text-white.px-4.py-1.rounded-full.text-sm.font-bold.mb-4.uppercase PLATAFORMA SOA
+        h2.text-6xl.font-extrabold.text-azul-deep.mb-6.leading-tight Consumo de APIs para 
+            span.text-rojo-accent Plataformas Online
+        p.text-xl.text-gray-600.mb-12 Gestione Pagos, IA Generativa y Actividades Colaborativas desde un solo panel profesional.
+
+        //- Tu Botón Profesional (Azul Deep con Hover Rojo)
+        div.flex.justify-center
+            input(class="w-72 bg-azul-deep text-white hover:bg-rojo-accent font-bold py-4 cursor-pointer rounded-4xl shadow-xl uppercase transition-all duration-300 border-none transform hover:-translate-y-1" type="submit" value="Explorar Servicios")
+
+    //- Grilla con sombras de colores protegida con paréntesis
+    div(class="grid grid-cols-1 md:grid-cols-3 gap-10 mt-24")
+        
+        //- Tarjeta Mercado Pago (Acento Azul)
+        div(class="bg-white p-10 rounded-3xl shadow-lg border border-gray-100 hover:border-blue-500 transition-all transform hover:-translate-y-2 hover:shadow-blue-100")
+            div.text-blue-600.text-5xl.mb-6 💳
+            h3.font-bold.text-2xl.mb-3.text-azul-deep Mercado Pago
+            p.text-gray-500.leading-relaxed Integración Checkout profesional para transacciones seguras.
+            a(href="/pagos" class="inline-block mt-6 text-blue-600 font-semibold hover:text-blue-800") Gestionar Pagos &rarr;
+        
+        //- Tarjeta Gemini AI (Acento Rojo)
+        div(class="bg-white p-10 rounded-3xl shadow-lg border border-gray-100 hover:border-rojo-accent transition-all transform hover:-translate-y-2 hover:shadow-red-100")
+            div.text-rojo-accent.text-5xl.mb-6 🤖
+            h3.font-bold.text-2xl.mb-3.text-azul-deep Gemini AI
+            p.text-gray-500.leading-relaxed Generación de contenido y análisis inteligente en tiempo real.
+            a(href="/ia" class="inline-block mt-6 text-rojo-accent font-semibold hover:text-red-700") Consultar IA &rarr;
+        
+        //- Tarjeta Padlet (Acento Gris Oscuro)
+        div(class="bg-white p-10 rounded-3xl shadow-lg border border-gray-100 hover:border-azul-deep transition-all transform hover:-translate-y-2 hover:shadow-gray-200")
+            div.text-gray-700.text-5xl.mb-6 📋
+            h3.font-bold.text-2xl.mb-3.text-azul-deep Padlet
+            p.text-gray-500.leading-relaxed Planeación y muros colaborativos para equipos SOA.
+            a(href="/actividades" class="inline-block mt-6 text-azul-deep font-semibold hover:text-gray-700") Ver Tableros &rarr;
