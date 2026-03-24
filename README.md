@@ -31,7 +31,7 @@ El proyecto <b>AWOS_Practica06_240235</b> consiste en el desarrollo de una plata
 | 4. | **Módulo de IA Generativa** | Integración de Google Gemini API para la generación de contenido dinámico. | 8 | ✅ Finalizada |
 | 5. | **Módulo de Pagos (Fintech)** | Implementación de Checkout y gestión de transacciones con Mercado Pago. | 8 | ✅ Finalizada |
 | 6. | **Módulo de Planeación (Colaborativo)** | Integración de Padlet API para la gestión de tableros. | 7 | ✅ Finalizada |
-| 7. | **Documentación de Endpoints y Pruebas** | Creación de la tabla de 20 endpoints y registro de resultados. | 10 | ❌ |
+| 7. | **Documentación de Endpoints y Pruebas** | Creación de la tabla de 20 endpoints y registro de resultados. | 10 | ✅ Finalizada |
 
 ---
 
